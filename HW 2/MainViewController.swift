@@ -16,11 +16,6 @@ class MainViewController: UIViewController {
     
     @IBOutlet var mainView: UIView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondVC = segue.destination as! SliderViewController
         if let mainBackgroundColor = mainView.backgroundColor {
